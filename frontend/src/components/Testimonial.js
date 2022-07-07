@@ -24,6 +24,16 @@ export default function Testimonial() {
                                 <span>Testimonials</span>
                                 <h2>What client’s say?</h2>
                             </div>
+                            <div className="testimonial-content">
+                                    <div className="text">
+                                        <p>“ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. enim  minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip consequat aute ux irure dolor in reprehen.”</p>
+                                    </div>
+                                    <div className="author-box">
+                                        <figure className="author-thumb"><img src="assets/images/resource/testimonial-1.png" alt=""/></figure>
+                                        <h3>Amelia Anna</h3>
+                                        <span className="designation">Senior Martketer</span>
+                                    </div>
+                            </div>
                             <div className="single-item-carousel owl-carousel owl-theme owl-dots-none nav-style-one">
                                 <div className="testimonial-content">
                                     <div className="text">

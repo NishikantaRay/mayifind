@@ -1,5 +1,5 @@
 import React from "react";
-var sectionStyle = {
+let sectionStyle = {
   backgroundImage: "url(assets/images/background/footer-1.jpg )",
 };
 export default function Footer() {
@@ -176,6 +176,9 @@ export default function Footer() {
             </div>
           </div>
         </footer>
+        <button className="scroll-top scroll-to-target" data-target="html">
+            <span className="far fa-long-arrow-up"></span>
+        </button>
       </div>
     </>
   );

@@ -65,9 +65,9 @@ function Banner() {
                           type="radio"
                           name="check-box"
                           id="check1"
-                          checked
+                          
                         />
-                        <label for="check1">
+                        <label htmlFor="check1">
                           <span></span>All
                         </label>
                       </div>
@@ -75,7 +75,7 @@ function Banner() {
                     <li>
                       <div className="single-checkbox">
                         <input type="radio" name="check-box" id="check2" />
-                        <label for="check2">
+                        <label htmlFor="check2">
                           <span></span>Education
                         </label>
                       </div>
@@ -83,7 +83,7 @@ function Banner() {
                     <li>
                       <div className="single-checkbox">
                         <input type="radio" name="check-box" id="check3" />
-                        <label for="check3">
+                        <label htmlFor="check3">
                           <span></span>Restaurant
                         </label>
                       </div>
@@ -91,7 +91,7 @@ function Banner() {
                     <li>
                       <div className="single-checkbox">
                         <input type="radio" name="check-box" id="check4" />
-                        <label for="check4">
+                        <label htmlFor="check4">
                           <span></span>Real Estate
                         </label>
                       </div>

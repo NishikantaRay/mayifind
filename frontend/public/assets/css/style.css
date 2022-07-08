@@ -3167,10 +3167,10 @@ textarea.form-control {
     height: 100%;
 }
 .background-image img {
-    display: none;
+    /* display: block; */
 }
 .background-image.original-size {
-    background-size: inherit;
+    /* background-size: inherit; */
 }
 .background-image.background-repeat-x {
     background-repeat: repeat-x;

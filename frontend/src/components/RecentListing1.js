@@ -1,5 +1,6 @@
 import React from "react";
 
+
 export default function RecentListing1() {
   return (
     <div>

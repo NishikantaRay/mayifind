@@ -1,6 +1,34 @@
 import React from 'react'
 
 export default function RecentListing() {
+    const card=[{
+        id:1,
+        tagcategory:"Home & Decor",
+        title:"Furniture for sale",
+        tag:"Offer",
+        image:"assets/img/image-01.jpg",
+        location:"Manhattan, NY",
+        price:"$80",
+        date:"02.05.2017",
+        name:"John Doe",
+        description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis lobortis",
+        button:"Detail"        
+    },
+    {
+        id:2,
+        tagcategory:"Home & Decor",
+        title:"Furniture for sale",
+        tag:"Offer",
+        image:"assets/img/image-02.jpg",
+        location:"Manhattan, NY",
+        price:"$80",
+        date:"02.05.2017",
+        name:"John Doe",
+        description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis lobortis",
+        button:"Detail"        
+    }
+];
+
   return (
     <div>
         <div className='page home-page'>
@@ -32,568 +60,46 @@ export default function RecentListing() {
                     </div>
                     
                     <div className="items masonry grid-xl-4-items grid-lg-3-items grid-md-2-items">
-                        <div className="item">
+                       
+                        {card.map((card,key) => (
+                            <div className="item" key={key}>
                             <div className="wrapper">
                                 <div className="image">
                                     <h3>
-                                        <a href="/" className="tag category">Home & Decor</a>
-                                        <a href="single-listing-1.html" className="title">Furniture for sale</a>
-                                        <span className="tag">Offer</span>
+                                        <a href="/" className="tag category">{card.tagcategory}</a>
+                                        <a href="single-listing-1.html" className="title">{card.title}</a>
+                                        <span className="tag">{card.tag}</span>
                                     </h3>
                                     <a href="single-listing-1.html" className="image-wrapper background-image">
-                                        <img src="assets/img/image-01.jpg" alt=""/>
+                                        <img src={card.image} alt=""/>
                                     </a>
                                 </div>
                                 
                                 <h4 className="location">
-                                    <a href="/">Manhattan, NY</a>
+                                    <a href="/">{card.location}</a>
                                 </h4>
-                                <div className="price">$80</div>
+                                <div className="price">{card.price}</div>
                                 <div className="meta">
                                     <figure>
-                                        <i className="fa fa-calendar-o"></i>02.05.2017
+                                        <i className="fa fa-calendar-o"></i>{card.date}
                                     </figure>
                                     <figure>
                                         <a href="/">
-                                            <i className="fa fa-user"></i>Jane Doe
+                                            <i className="fa fa-user"></i>{card.name}
                                         </a>
                                     </figure>
                                 </div>
                                 
                                 <div className="description">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis lobortis</p>
+                                    <p>{card.description}</p>
                                 </div>
                                
-                                <a href="single-listing-1.html" className="detail text-caps underline">Detail</a>
+                                <a href="single-listing-1.html" className="detail text-caps underline">{card.button}</a>
                             </div>
                         </div>
-                        <div className="item">
-                            <div className="wrapper">
-                                <div className="image">
-                                    <h3>
-                                        <a href="/" className="tag category">Home & Decor</a>
-                                        <a href="single-listing-1.html" className="title">Furniture for sale</a>
-                                        <span className="tag">Offer</span>
-                                    </h3>
-                                    <a href="single-listing-1.html" className="image-wrapper background-image">
-                                        <img src="assets/img/image-01.jpg" alt=""/>
-                                    </a>
-                                </div>
-                                
-                                <h4 className="location">
-                                    <a href="/">Manhattan, NY</a>
-                                </h4>
-                                <div className="price">$80</div>
-                                <div className="meta">
-                                    <figure>
-                                        <i className="fa fa-calendar-o"></i>02.05.2017
-                                    </figure>
-                                    <figure>
-                                        <a href="/">
-                                            <i className="fa fa-user"></i>Jane Doe
-                                        </a>
-                                    </figure>
-                                </div>
-                                
-                                <div className="description">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis lobortis</p>
-                                </div>
-                               
-                                <a href="single-listing-1.html" className="detail text-caps underline">Detail</a>
-                            </div>
-                        </div>
-                        <div className="item">
-                            <div className="wrapper">
-                                <div className="image">
-                                    <h3>
-                                        <a href="/" className="tag category">Home & Decor</a>
-                                        <a href="single-listing-1.html" className="title">Furniture for sale</a>
-                                        <span className="tag">Offer</span>
-                                    </h3>
-                                    <a href="single-listing-1.html" className="image-wrapper background-image">
-                                        <img src="assets/img/image-01.jpg" alt=""/>
-                                    </a>
-                                </div>
-                                
-                                <h4 className="location">
-                                    <a href="/">Manhattan, NY</a>
-                                </h4>
-                                <div className="price">$80</div>
-                                <div className="meta">
-                                    <figure>
-                                        <i className="fa fa-calendar-o"></i>02.05.2017
-                                    </figure>
-                                    <figure>
-                                        <a href="/">
-                                            <i className="fa fa-user"></i>Jane Doe
-                                        </a>
-                                    </figure>
-                                </div>
-                                
-                                <div className="description">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis lobortis</p>
-                                </div>
-                               
-                                <a href="single-listing-1.html" className="detail text-caps underline">Detail</a>
-                            </div>
-                        </div>
-                        <div className="item">
-                            <div className="wrapper">
-                                <div className="image">
-                                    <h3>
-                                        <a href="/" className="tag category">Home & Decor</a>
-                                        <a href="single-listing-1.html" className="title">Furniture for sale</a>
-                                        <span className="tag">Offer</span>
-                                    </h3>
-                                    <a href="single-listing-1.html" className="image-wrapper background-image">
-                                        <img src="assets/img/image-01.jpg" alt=""/>
-                                    </a>
-                                </div>
-                                
-                                <h4 className="location">
-                                    <a href="/">Manhattan, NY</a>
-                                </h4>
-                                <div className="price">$80</div>
-                                <div className="meta">
-                                    <figure>
-                                        <i className="fa fa-calendar-o"></i>02.05.2017
-                                    </figure>
-                                    <figure>
-                                        <a href="/">
-                                            <i className="fa fa-user"></i>Jane Doe
-                                        </a>
-                                    </figure>
-                                </div>
-                                
-                                <div className="description">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis lobortis</p>
-                                </div>
-                               
-                                <a href="single-listing-1.html" className="detail text-caps underline">Detail</a>
-                            </div>
-                        </div>
-                        <div className="item">
-                            <div className="wrapper">
-                                <div className="image">
-                                    <h3>
-                                        <a href="/" className="tag category">Home & Decor</a>
-                                        <a href="single-listing-1.html" className="title">Furniture for sale</a>
-                                        <span className="tag">Offer</span>
-                                    </h3>
-                                    <a href="single-listing-1.html" className="image-wrapper background-image">
-                                        <img src="assets/img/image-01.jpg" alt=""/>
-                                    </a>
-                                </div>
-                                
-                                <h4 className="location">
-                                    <a href="/">Manhattan, NY</a>
-                                </h4>
-                                <div className="price">$80</div>
-                                <div className="meta">
-                                    <figure>
-                                        <i className="fa fa-calendar-o"></i>02.05.2017
-                                    </figure>
-                                    <figure>
-                                        <a href="/">
-                                            <i className="fa fa-user"></i>Jane Doe
-                                        </a>
-                                    </figure>
-                                </div>
-                                
-                                <div className="description">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis lobortis</p>
-                                </div>
-                               
-                                <a href="single-listing-1.html" className="detail text-caps underline">Detail</a>
-                            </div>
-                        </div>
-                        <div className="item">
-                            <div className="wrapper">
-                                <div className="image">
-                                    <h3>
-                                        <a href="/" className="tag category">Home & Decor</a>
-                                        <a href="single-listing-1.html" className="title">Furniture for sale</a>
-                                        <span className="tag">Offer</span>
-                                    </h3>
-                                    <a href="single-listing-1.html" className="image-wrapper background-image">
-                                        <img src="assets/img/image-01.jpg" alt=""/>
-                                    </a>
-                                </div>
-                                
-                                <h4 className="location">
-                                    <a href="/">Manhattan, NY</a>
-                                </h4>
-                                <div className="price">$80</div>
-                                <div className="meta">
-                                    <figure>
-                                        <i className="fa fa-calendar-o"></i>02.05.2017
-                                    </figure>
-                                    <figure>
-                                        <a href="/">
-                                            <i className="fa fa-user"></i>Jane Doe
-                                        </a>
-                                    </figure>
-                                </div>
-                                
-                                <div className="description">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis lobortis</p>
-                                </div>
-                               
-                                <a href="single-listing-1.html" className="detail text-caps underline">Detail</a>
-                            </div>
-                        </div>
-                        <div className="item">
-                            <div className="wrapper">
-                                <div className="image">
-                                    <h3>
-                                        <a href="/" className="tag category">Home & Decor</a>
-                                        <a href="single-listing-1.html" className="title">Furniture for sale</a>
-                                        <span className="tag">Offer</span>
-                                    </h3>
-                                    <a href="single-listing-1.html" className="image-wrapper background-image">
-                                        <img src="assets/img/image-01.jpg" alt=""/>
-                                    </a>
-                                </div>
-                                
-                                <h4 className="location">
-                                    <a href="/">Manhattan, NY</a>
-                                </h4>
-                                <div className="price">$80</div>
-                                <div className="meta">
-                                    <figure>
-                                        <i className="fa fa-calendar-o"></i>02.05.2017
-                                    </figure>
-                                    <figure>
-                                        <a href="/">
-                                            <i className="fa fa-user"></i>Jane Doe
-                                        </a>
-                                    </figure>
-                                </div>
-                                
-                                <div className="description">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis lobortis</p>
-                                </div>
-                               
-                                <a href="single-listing-1.html" className="detail text-caps underline">Detail</a>
-                            </div>
-                        </div>
-                        <div className="item">
-                            <div className="wrapper">
-                                <div className="image">
-                                    <h3>
-                                        <a href="/" className="tag category">Home & Decor</a>
-                                        <a href="single-listing-1.html" className="title">Furniture for sale</a>
-                                        <span className="tag">Offer</span>
-                                    </h3>
-                                    <a href="single-listing-1.html" className="image-wrapper background-image">
-                                        <img src="assets/img/image-01.jpg" alt=""/>
-                                    </a>
-                                </div>
-                                
-                                <h4 className="location">
-                                    <a href="/">Manhattan, NY</a>
-                                </h4>
-                                <div className="price">$80</div>
-                                <div className="meta">
-                                    <figure>
-                                        <i className="fa fa-calendar-o"></i>02.05.2017
-                                    </figure>
-                                    <figure>
-                                        <a href="/">
-                                            <i className="fa fa-user"></i>Jane Doe
-                                        </a>
-                                    </figure>
-                                </div>
-                                
-                                <div className="description">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis lobortis</p>
-                                </div>
-                               
-                                <a href="single-listing-1.html" className="detail text-caps underline">Detail</a>
-                            </div>
-                        </div>
-                        <div className="item">
-                            <div className="wrapper">
-                                <div className="image">
-                                    <h3>
-                                        <a href="/" className="tag category">Home & Decor</a>
-                                        <a href="single-listing-1.html" className="title">Furniture for sale</a>
-                                        <span className="tag">Offer</span>
-                                    </h3>
-                                    <a href="single-listing-1.html" className="image-wrapper background-image">
-                                        <img src="assets/img/image-01.jpg" alt=""/>
-                                    </a>
-                                </div>
-                                
-                                <h4 className="location">
-                                    <a href="/">Manhattan, NY</a>
-                                </h4>
-                                <div className="price">$80</div>
-                                <div className="meta">
-                                    <figure>
-                                        <i className="fa fa-calendar-o"></i>02.05.2017
-                                    </figure>
-                                    <figure>
-                                        <a href="/">
-                                            <i className="fa fa-user"></i>Jane Doe
-                                        </a>
-                                    </figure>
-                                </div>
-                                
-                                <div className="description">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis lobortis</p>
-                                </div>
-                               
-                                <a href="single-listing-1.html" className="detail text-caps underline">Detail</a>
-                            </div>
-                        </div>
-                        <div className="item">
-                            <div className="wrapper">
-                                <div className="image">
-                                    <h3>
-                                        <a href="/" className="tag category">Home & Decor</a>
-                                        <a href="single-listing-1.html" className="title">Furniture for sale</a>
-                                        <span className="tag">Offer</span>
-                                    </h3>
-                                    <a href="single-listing-1.html" className="image-wrapper background-image">
-                                        <img src="assets/img/image-01.jpg" alt=""/>
-                                    </a>
-                                </div>
-                                
-                                <h4 className="location">
-                                    <a href="/">Manhattan, NY</a>
-                                </h4>
-                                <div className="price">$80</div>
-                                <div className="meta">
-                                    <figure>
-                                        <i className="fa fa-calendar-o"></i>02.05.2017
-                                    </figure>
-                                    <figure>
-                                        <a href="/">
-                                            <i className="fa fa-user"></i>Jane Doe
-                                        </a>
-                                    </figure>
-                                </div>
-                                
-                                <div className="description">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis lobortis</p>
-                                </div>
-                               
-                                <a href="single-listing-1.html" className="detail text-caps underline">Detail</a>
-                            </div>
-                        </div>
-                        <div className="item">
-                            <div className="wrapper">
-                                <div className="image">
-                                    <h3>
-                                        <a href="/" className="tag category">Home & Decor</a>
-                                        <a href="single-listing-1.html" className="title">Furniture for sale</a>
-                                        <span className="tag">Offer</span>
-                                    </h3>
-                                    <a href="single-listing-1.html" className="image-wrapper background-image">
-                                        <img src="assets/img/image-01.jpg" alt=""/>
-                                    </a>
-                                </div>
-                                
-                                <h4 className="location">
-                                    <a href="/">Manhattan, NY</a>
-                                </h4>
-                                <div className="price">$80</div>
-                                <div className="meta">
-                                    <figure>
-                                        <i className="fa fa-calendar-o"></i>02.05.2017
-                                    </figure>
-                                    <figure>
-                                        <a href="/">
-                                            <i className="fa fa-user"></i>Jane Doe
-                                        </a>
-                                    </figure>
-                                </div>
-                                
-                                <div className="description">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis lobortis</p>
-                                </div>
-                               
-                                <a href="single-listing-1.html" className="detail text-caps underline">Detail</a>
-                            </div>
-                        </div>
-                        <div className="item">
-                            <div className="wrapper">
-                                <div className="image">
-                                    <h3>
-                                        <a href="/" className="tag category">Home & Decor</a>
-                                        <a href="single-listing-1.html" className="title">Furniture for sale</a>
-                                        <span className="tag">Offer</span>
-                                    </h3>
-                                    <a href="single-listing-1.html" className="image-wrapper background-image">
-                                        <img src="assets/img/image-01.jpg" alt=""/>
-                                    </a>
-                                </div>
-                                
-                                <h4 className="location">
-                                    <a href="/">Manhattan, NY</a>
-                                </h4>
-                                <div className="price">$80</div>
-                                <div className="meta">
-                                    <figure>
-                                        <i className="fa fa-calendar-o"></i>02.05.2017
-                                    </figure>
-                                    <figure>
-                                        <a href="/">
-                                            <i className="fa fa-user"></i>Jane Doe
-                                        </a>
-                                    </figure>
-                                </div>
-                                
-                                <div className="description">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis lobortis</p>
-                                </div>
-                               
-                                <a href="single-listing-1.html" className="detail text-caps underline">Detail</a>
-                            </div>
-                        </div>
-                        <div className="item">
-                            <div className="wrapper">
-                                <div className="image">
-                                    <h3>
-                                        <a href="/" className="tag category">Home & Decor</a>
-                                        <a href="single-listing-1.html" className="title">Furniture for sale</a>
-                                        <span className="tag">Offer</span>
-                                    </h3>
-                                    <a href="single-listing-1.html" className="image-wrapper background-image">
-                                        <img src="assets/img/image-01.jpg" alt=""/>
-                                    </a>
-                                </div>
-                                
-                                <h4 className="location">
-                                    <a href="/">Manhattan, NY</a>
-                                </h4>
-                                <div className="price">$80</div>
-                                <div className="meta">
-                                    <figure>
-                                        <i className="fa fa-calendar-o"></i>02.05.2017
-                                    </figure>
-                                    <figure>
-                                        <a href="/">
-                                            <i className="fa fa-user"></i>Jane Doe
-                                        </a>
-                                    </figure>
-                                </div>
-                                
-                                <div className="description">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis lobortis</p>
-                                </div>
-                               
-                                <a href="single-listing-1.html" className="detail text-caps underline">Detail</a>
-                            </div>
-                        </div>
-                        <div className="item">
-                            <div className="wrapper">
-                                <div className="image">
-                                    <h3>
-                                        <a href="/" className="tag category">Home & Decor</a>
-                                        <a href="single-listing-1.html" className="title">Furniture for sale</a>
-                                        <span className="tag">Offer</span>
-                                    </h3>
-                                    <a href="single-listing-1.html" className="image-wrapper background-image">
-                                        <img src="assets/img/image-01.jpg" alt=""/>
-                                    </a>
-                                </div>
-                                
-                                <h4 className="location">
-                                    <a href="/">Manhattan, NY</a>
-                                </h4>
-                                <div className="price">$80</div>
-                                <div className="meta">
-                                    <figure>
-                                        <i className="fa fa-calendar-o"></i>02.05.2017
-                                    </figure>
-                                    <figure>
-                                        <a href="/">
-                                            <i className="fa fa-user"></i>Jane Doe
-                                        </a>
-                                    </figure>
-                                </div>
-                                
-                                <div className="description">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis lobortis</p>
-                                </div>
-                               
-                                <a href="single-listing-1.html" className="detail text-caps underline">Detail</a>
-                            </div>
-                        </div>
-                        <div className="item">
-                            <div className="wrapper">
-                                <div className="image">
-                                    <h3>
-                                        <a href="/" className="tag category">Home & Decor</a>
-                                        <a href="single-listing-1.html" className="title">Furniture for sale</a>
-                                        <span className="tag">Offer</span>
-                                    </h3>
-                                    <a href="single-listing-1.html" className="image-wrapper background-image">
-                                        <img src="assets/img/image-01.jpg" alt=""/>
-                                    </a>
-                                </div>
-                                
-                                <h4 className="location">
-                                    <a href="/">Manhattan, NY</a>
-                                </h4>
-                                <div className="price">$80</div>
-                                <div className="meta">
-                                    <figure>
-                                        <i className="fa fa-calendar-o"></i>02.05.2017
-                                    </figure>
-                                    <figure>
-                                        <a href="/">
-                                            <i className="fa fa-user"></i>Jane Doe
-                                        </a>
-                                    </figure>
-                                </div>
-                                
-                                <div className="description">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis lobortis</p>
-                                </div>
-                               
-                                <a href="single-listing-1.html" className="detail text-caps underline">Detail</a>
-                            </div>
-                        </div>
-                        <div className="item">
-                            <div className="wrapper">
-                                <div className="image">
-                                    <h3>
-                                        <a href="/" className="tag category">Home & Decor</a>
-                                        <a href="single-listing-1.html" className="title">Furniture for sale</a>
-                                        <span className="tag">Offer</span>
-                                    </h3>
-                                    <a href="single-listing-1.html" className="image-wrapper background-image">
-                                        <img src="assets/img/image-01.jpg" alt=""/>
-                                    </a>
-                                </div>
-                                
-                                <h4 className="location">
-                                    <a href="/">Manhattan, NY</a>
-                                </h4>
-                                <div className="price">$80</div>
-                                <div className="meta">
-                                    <figure>
-                                        <i className="fa fa-calendar-o"></i>02.05.2017
-                                    </figure>
-                                    <figure>
-                                        <a href="/">
-                                            <i className="fa fa-user"></i>Jane Doe
-                                        </a>
-                                    </figure>
-                                </div>
-                                
-                                <div className="description">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis lobortis</p>
-                                </div>
-                               
-                                <a href="single-listing-1.html" className="detail text-caps underline">Detail</a>
-                            </div>
-                        </div>
-                        
+                        ))}
 
+                     
                     </div>
                     
 

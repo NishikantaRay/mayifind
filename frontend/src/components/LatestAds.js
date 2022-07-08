@@ -3,7 +3,7 @@ import React from 'react'
 export default function LatestAds() {
   return (
     <div>
-        <section className="block">
+        <section className="block" >
                 <div className="container">
                     <div className="box has-dark-background">
                         <div className="row align-items-center justify-content-center d-flex">
@@ -49,7 +49,7 @@ export default function LatestAds() {
                         </div>
                         <div className="background">
                             <div className="background-image">
-                                <img src="assets/img/hero-background-image-01.jpg" alt=""/>
+                                <img src="assets/images/background-image-01.jpg" alt=""/>
                             </div>
                             
                         </div>

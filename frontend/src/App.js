@@ -1,5 +1,6 @@
 import React from 'react';
-import Index1 from './pages/Index1';
+// import Index1 from './pages/Index1';
+// import Index2 from './pages/Index2';
 
 
 function App() {
@@ -8,16 +9,9 @@ function App() {
 
     {/* <Index1/> */}
 
+{/* <Index2></Index2> */}
 
 
-     {/* <Navbar/>
-     <Categories/>
-     
-     <FeaturesSteps/>
-     <LatestAds/>
-     <RecentListing/>
-     
-     <FooterComp/> */}
     </div>
   );
 }

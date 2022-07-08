@@ -61,7 +61,7 @@ export default function LatestAds() {
             </section>
            
 
-            {/* <section className="block">
+            <section className="block">
                 <div className="container">
                     <div className="d-flex align-items-center justify-content-around">
                         <a href="/">
@@ -82,7 +82,7 @@ export default function LatestAds() {
                     </div>
                 </div>
 
-            </section> */}
+            </section>
 
         
     </div>

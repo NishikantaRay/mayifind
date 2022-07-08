@@ -4,7 +4,7 @@ export default function RecentListing() {
   return (
     <div>
         <div className='page home-page'>
-        <section classNameName="content">
+        <section className="content">
             <section className="block">
                 <div className="container">
                     

@@ -3,26 +3,26 @@ import React from 'react'
 function FooterComp() {
   return (
     <>
-        <footer class="footer">
-            <div class="wrapper">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-5">
-                            <a href="/" class="brand">
+        <footer className="footer">
+            <div className="wrapper">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-5">
+                            <a href="/" className="brand">
                                 <img src="assets/img/logo.png" alt=""/>
                             </a>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec tincidunt arcu, sit amet
-                                fermentum sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
+                                fermentum sem. className aptent taciti sociosqu ad litora torquent per conubia nostra.
                             </p>
                         </div>
                        
-                        <div class="col-md-3">
+                        <div className="col-md-3">
                             <h2>Navigation</h2>
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6">
+                            <div className="row">
+                                <div className="col-md-6 col-sm-6">
                                     <nav>
-                                        <ul class="list-unstyled">
+                                        <ul className="list-unstyled">
                                             <li>
                                                 <a href="/">Home</a>
                                             </li>
@@ -44,9 +44,9 @@ function FooterComp() {
                                         </ul>
                                     </nav>
                                 </div>
-                                <div class="col-md-6 col-sm-6">
+                                <div className="col-md-6 col-sm-6">
                                     <nav>
-                                        <ul class="list-unstyled">
+                                        <ul className="list-unstyled">
                                             <li>
                                                 <a href="/">My Ads</a>
                                             </li>
@@ -62,7 +62,7 @@ function FooterComp() {
                             </div>
                         </div>
                         
-                        <div class="col-md-4">
+                        <div className="col-md-4">
                             <h2>Contact</h2>
                             <address>
                                 <figure>
@@ -75,15 +75,15 @@ function FooterComp() {
                                 <strong>Skype: </strong> Craigs
                                 <br/>
                                 <br/>
-                                <a href="contact.html" class="btn btn-primary text-caps btn-framed">Contact Us</a>
+                                <a href="contact.html" className="btn btn-primary text-caps btn-framed">Contact Us</a>
                             </address>
                         </div>
                         
                     </div>
                  
                 </div>
-                <div class="background">
-                    <div class="background-image original-size">
+                <div className="background">
+                    <div className="background-image original-size">
                         <img src="assets/img/footer-background-icons.jpg" alt=""/>
                     </div>
                   

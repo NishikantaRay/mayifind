@@ -11,9 +11,11 @@ function App() {
     <div className="App">
      <Navbar/>
      <Categories/>
-     <RecentListing/>
+     
      <FeaturesSteps/>
      <LatestAds/>
+     <RecentListing/>
+     
      <FooterComp/>
     </div>
   );

@@ -13,7 +13,7 @@ export default function LatestAds() {
                                     <div className="form-row">
                                         <div className="col-md-4 col-sm-4">
                                             <div className="form-group">
-                                                <label for="newsletter-category" className="col-form-label">Category?</label>
+                                                <label htmlFor="newsletter-category" className="col-form-label">Category?</label>
                                                 <select name="newsletter-category" id="newsletter-category" data-placeholder="Select Category" >
                                                     <option value="">Select Category</option>
                                                     <option value="1">Computers</option>
@@ -28,7 +28,7 @@ export default function LatestAds() {
                                         
                                         <div className="col-md-7 col-sm-7">
                                             <div className="form-group">
-                                                <label for="newsletter-email" className="col-form-label">Your Email</label>
+                                                <label htmlFor="newsletter-email" className="col-form-label">Your Email</label>
                                                 <input name="newsletter-email" type="email" className="form-control" id="newsletter-email" placeholder="Your Email"/>
                                             </div>
                                             
@@ -76,9 +76,9 @@ export default function LatestAds() {
                         <a href="/">
                             <img src="assets/img/partner-4.png" alt=""/>
                         </a>
-                        <a href="/">
+                        {/* <a href="/">
                             <img src="assets/img/partner-5.png" alt=""/>
-                        </a>
+                        </a> */}
                     </div>
                 </div>
 

@@ -4,33 +4,33 @@ import PageTitle from '../components/PageTitle'
 export default function Navbar() {
   return (
     <div>
-       <header class="hero">
-            <div class="hero-wrapper">
+       <header className="hero">
+            <div className="hero-wrapper">
                
-                <div class="secondary-navigation">
-                    <div class="container">
-                        <ul class="left">
+                <div className="secondary-navigation">
+                    <div className="container">
+                        <ul className="left">
                             <li>
                             <span>
-                                <i class="fa fa-phone"></i> +1 123 456 789
+                                <i className="fa fa-phone"></i> +1 123 456 789
                             </span>
                             </li>
                         </ul>
                      
-                        <ul class="right">
+                        <ul className="right">
                             <li>
                                 <a href="my-ads.html">
-                                    <i class="fa fa-heart"></i>My Ads
+                                    <i className="fa fa-heart"></i>My Ads
                                 </a>
                             </li>
                             <li>
                                 <a href="sign-in.html">
-                                    <i class="fa fa-sign-in"></i>Sign In
+                                    <i className="fa fa-sign-in"></i>Sign In
                                 </a>
                             </li>
                             <li>
                                 <a href="register.html">
-                                    <i class="fa fa-pencil-square-o"></i>Register
+                                    <i className="fa fa-pencil-square-o"></i>Register
                                 </a>
                             </li>
                         </ul>
@@ -39,102 +39,102 @@ export default function Navbar() {
                  
                 </div>
                
-                <div class="main-navigation">
-                    <div class="container">
-                        <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
-                            <a class="navbar-brand" href="index.html">
+                <div className="main-navigation">
+                    <div className="container">
+                        <nav className="navbar navbar-expand-lg navbar-light justify-content-between">
+                            <a className="navbar-brand" href="index.html">
                                 <img src="assets/img/logo.png" alt=""/>
                             </a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
+                            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                                <span className="navbar-toggler-icon"></span>
                             </button>
-                            <div class="collapse navbar-collapse" id="navbar">
+                            <div className="collapse navbar-collapse" id="navbar">
                                
-                                <ul class="navbar-nav">
-                                    <li class="nav-item active has-child">
-                                        <a class="nav-link" href="/">Home</a>
-                                        <ul class="child">
-                                            <li class="nav-item">
-                                                <a href="index.html" class="nav-link">Home 1</a>
+                                <ul className="navbar-nav">
+                                    <li className="nav-item active has-child">
+                                        <a className="nav-link" href="/">Home</a>
+                                        <ul className="child">
+                                            <li className="nav-item">
+                                                <a href="index.html" className="nav-link">Home 1</a>
                                             </li>
-                                            <li class="nav-item">
-                                                <a href="index-2.html" class="nav-link">Home 2</a>
+                                            <li className="nav-item">
+                                                <a href="index-2.html" className="nav-link">Home 2</a>
                                             </li>
-                                            <li class="nav-item">
-                                                <a href="index-3.html" class="nav-link">Home 3</a>
+                                            <li className="nav-item">
+                                                <a href="index-3.html" className="nav-link">Home 3</a>
                                             </li>
-                                            <li class="nav-item">
-                                                <a href="index-4.html" class="nav-link">Home 4</a>
+                                            <li className="nav-item">
+                                                <a href="index-4.html" className="nav-link">Home 4</a>
                                             </li>
                                         </ul>
                                     </li>
-                                    <li class="nav-item has-child">
-                                        <a class="nav-link" href="/">Listing</a>
+                                    <li className="nav-item has-child">
+                                        <a className="nav-link" href="/">Listing</a>
                                        
-                                        <ul class="child">
-                                            <li class="nav-item has-child">
-                                                <a href="/" class="nav-link">Grid</a>
+                                        <ul className="child">
+                                            <li className="nav-item has-child">
+                                                <a href="/" className="nav-link">Grid</a>
                                                
-                                                <ul class="child">
-                                                    <li class="nav-item">
-                                                        <a href="listing-grid-full-width.html" class="nav-link">Full Width</a>
+                                                <ul className="child">
+                                                    <li className="nav-item">
+                                                        <a href="listing-grid-full-width.html" className="nav-link">Full Width</a>
                                                     </li>
-                                                    <li class="nav-item">
-                                                        <a href="listing-grid-sidebar.html" class="nav-link">With Sidebar</a>
+                                                    <li className="nav-item">
+                                                        <a href="listing-grid-sidebar.html" className="nav-link">With Sidebar</a>
                                                     </li>
-                                                    <li class="nav-item">
-                                                        <a href="listing-grid-compact-sidebar.html" class="nav-link">Compact With Sidebar</a>
+                                                    <li className="nav-item">
+                                                        <a href="listing-grid-compact-sidebar.html" className="nav-link">Compact With Sidebar</a>
                                                     </li>
-                                                    <li class="nav-item">
-                                                        <a href="listing-grid-compact-full-width.html" class="nav-link">Compact Full Width</a>
-                                                    </li>
-                                                </ul>
-                                                
-                                            </li>
-                                            <li class="nav-item has-child">
-                                                <a href="/" class="nav-link">List</a>
-                                                
-                                                <ul class="child">
-                                                    <li class="nav-item">
-                                                        <a href="listing-list-full-width.html" class="nav-link">Full Width</a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a href="listing-list-sidebar.html" class="nav-link">With Sidebar</a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a href="listing-list-compact-sidebar.html" class="nav-link">Compact With Sidebar</a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a href="listing-list-compact-full-width.html" class="nav-link">Compact Full Width</a>
+                                                    <li className="nav-item">
+                                                        <a href="listing-grid-compact-full-width.html" className="nav-link">Compact Full Width</a>
                                                     </li>
                                                 </ul>
                                                 
                                             </li>
-                                            <li class="nav-item has-child">
-                                                <a href="/" class="nav-link">Masonry</a>
+                                            <li className="nav-item has-child">
+                                                <a href="/" className="nav-link">List</a>
                                                 
-                                                <ul class="child">
-                                                    <li class="nav-item">
-                                                        <a href="listing-masonry-full-width.html" class="nav-link">Full Width</a>
+                                                <ul className="child">
+                                                    <li className="nav-item">
+                                                        <a href="listing-list-full-width.html" className="nav-link">Full Width</a>
                                                     </li>
-                                                    <li class="nav-item">
-                                                        <a href="listing-masonry-sidebar.html" class="nav-link">With Sidebar</a>
+                                                    <li className="nav-item">
+                                                        <a href="listing-list-sidebar.html" className="nav-link">With Sidebar</a>
+                                                    </li>
+                                                    <li className="nav-item">
+                                                        <a href="listing-list-compact-sidebar.html" className="nav-link">Compact With Sidebar</a>
+                                                    </li>
+                                                    <li className="nav-item">
+                                                        <a href="listing-list-compact-full-width.html" className="nav-link">Compact Full Width</a>
+                                                    </li>
+                                                </ul>
+                                                
+                                            </li>
+                                            <li className="nav-item has-child">
+                                                <a href="/" className="nav-link">Masonry</a>
+                                                
+                                                <ul className="child">
+                                                    <li className="nav-item">
+                                                        <a href="listing-masonry-full-width.html" className="nav-link">Full Width</a>
+                                                    </li>
+                                                    <li className="nav-item">
+                                                        <a href="listing-masonry-sidebar.html" className="nav-link">With Sidebar</a>
                                                     </li>
                                                 </ul>
                                                
                                             </li>
-                                            <li class="nav-item has-child">
-                                                <a href="/" class="nav-link">Single</a>
+                                            <li className="nav-item has-child">
+                                                <a href="/" className="nav-link">Single</a>
                                              
-                                                <ul class="child">
-                                                    <li class="nav-item">
-                                                        <a href="single-listing-1.html" class="nav-link">Single 1</a>
+                                                <ul className="child">
+                                                    <li className="nav-item">
+                                                        <a href="single-listing-1.html" className="nav-link">Single 1</a>
                                                     </li>
-                                                    <li class="nav-item">
-                                                        <a href="single-listing-2.html" class="nav-link">Single 2</a>
+                                                    <li className="nav-item">
+                                                        <a href="single-listing-2.html" className="nav-link">Single 2</a>
                                                     </li>
-                                                    <li class="nav-item">
-                                                        <a href="single-listing-3.html" class="nav-link">Single 3</a>
+                                                    <li className="nav-item">
+                                                        <a href="single-listing-3.html" className="nav-link">Single 3</a>
                                                     </li>
                                                 </ul>
                                                
@@ -142,126 +142,126 @@ export default function Navbar() {
                                         </ul>
                                     
                                     </li>
-                                    <li class="nav-item has-child">
-                                        <a class="nav-link" href="/">Pages</a>
+                                    <li className="nav-item has-child">
+                                        <a className="nav-link" href="/">Pages</a>
                                       
-                                        <ul class="child">
-                                            <li class="nav-item">
-                                                <a href="sellers.html" class="nav-link">Sellers</a>
+                                        <ul className="child">
+                                            <li className="nav-item">
+                                                <a href="sellers.html" className="nav-link">Sellers</a>
                                             </li>
-                                            <li class="nav-item has-child">
-                                                <a href="/" class="nav-link">Seller Detail</a>
+                                            <li className="nav-item has-child">
+                                                <a href="/" className="nav-link">Seller Detail</a>
                                                 
-                                                <ul class="child">
-                                                    <li class="nav-item">
-                                                        <a href="seller-detail-1.html" class="nav-link">Seller Detail
+                                                <ul className="child">
+                                                    <li className="nav-item">
+                                                        <a href="seller-detail-1.html" className="nav-link">Seller Detail
                                                             1</a>
                                                     </li>
-                                                    <li class="nav-item">
-                                                        <a href="seller-detail-2.html" class="nav-link">Seller Detail
+                                                    <li className="nav-item">
+                                                        <a href="seller-detail-2.html" className="nav-link">Seller Detail
                                                             2</a>
                                                     </li>
                                                 </ul>
                                                 
                                             </li>
-                                            <li class="nav-item">
-                                                <a href="blog.html" class="nav-link">Blog</a>
+                                            <li className="nav-item">
+                                                <a href="blog.html" className="nav-link">Blog</a>
                                             </li>
-                                            <li class="nav-item">
-                                                <a href="blog-post.html" class="nav-link">Blog Post</a>
+                                            <li className="nav-item">
+                                                <a href="blog-post.html" className="nav-link">Blog Post</a>
                                             </li>
-                                            <li class="nav-item">
-                                                <a href="submit.html" class="nav-link">Submit Ad</a>
+                                            <li className="nav-item">
+                                                <a href="submit.html" className="nav-link">Submit Ad</a>
                                             </li>
-                                            <li class="nav-item">
-                                                <a href="pricing.html" class="nav-link">Pricing</a>
+                                            <li className="nav-item">
+                                                <a href="pricing.html" className="nav-link">Pricing</a>
                                             </li>
-                                            <li class="nav-item">
-                                                <a href="faq.html" class="nav-link">FAQ</a>
+                                            <li className="nav-item">
+                                                <a href="faq.html" className="nav-link">FAQ</a>
                                             </li>
                                         </ul>
                                    
                                     </li>
-                                    <li class="nav-item has-child">
-                                        <a class="nav-link" href="/">Extras</a>
+                                    <li className="nav-item has-child">
+                                        <a className="nav-link" href="/">Extras</a>
                                         
-                                        <ul class="child">
-                                            <li class="nav-item has-child">
-                                                <a href="/" class="nav-link">Grid Variants</a>
-                                                <ul class="child">
-                                                    <li class="nav-item">
-                                                        <a href="listing-grid-4-items.html" class="nav-link">4 Items</a>
+                                        <ul className="child">
+                                            <li className="nav-item has-child">
+                                                <a href="/" className="nav-link">Grid Variants</a>
+                                                <ul className="child">
+                                                    <li className="nav-item">
+                                                        <a href="listing-grid-4-items.html" className="nav-link">4 Items</a>
                                                     </li>
-                                                    <li class="nav-item">
-                                                        <a href="listing-grid-3-items.html" class="nav-link">3 Items</a>
+                                                    <li className="nav-item">
+                                                        <a href="listing-grid-3-items.html" className="nav-link">3 Items</a>
                                                     </li>
-                                                    <li class="nav-item">
-                                                        <a href="listing-grid-2-items.html" class="nav-link">2 Items</a>
+                                                    <li className="nav-item">
+                                                        <a href="listing-grid-2-items.html" className="nav-link">2 Items</a>
                                                     </li>
                                                 </ul>
                                             </li>
-                                            <li class="nav-item has-child">
-                                                <a href="/" class="nav-link">User Panel</a>
-                                                <ul class="child">
-                                                    <li class="nav-item">
-                                                        <a href="my-profile.html" class="nav-link">My Profile</a>
+                                            <li className="nav-item has-child">
+                                                <a href="/" className="nav-link">User Panel</a>
+                                                <ul className="child">
+                                                    <li className="nav-item">
+                                                        <a href="my-profile.html" className="nav-link">My Profile</a>
                                                     </li>
-                                                    <li class="nav-item">
-                                                        <a href="my-ads.html" class="nav-link">My Ads</a>
+                                                    <li className="nav-item">
+                                                        <a href="my-ads.html" className="nav-link">My Ads</a>
                                                     </li>
-                                                    <li class="nav-item">
-                                                        <a href="change-password.html" class="nav-link">Change
+                                                    <li className="nav-item">
+                                                        <a href="change-password.html" className="nav-link">Change
                                                             Password</a>
                                                     </li>
-                                                    <li class="nav-item">
-                                                        <a href="sign-in.html" class="nav-link">Sign In</a>
+                                                    <li className="nav-item">
+                                                        <a href="sign-in.html" className="nav-link">Sign In</a>
                                                     </li>
-                                                    <li class="nav-item">
-                                                        <a href="register.html" class="nav-link">Register</a>
+                                                    <li className="nav-item">
+                                                        <a href="register.html" className="nav-link">Register</a>
                                                     </li>
                                                 </ul>
                                             </li>
-                                            <li class="nav-item">
-                                                <a href="elements.html" class="nav-link">Elements</a>
+                                            <li className="nav-item">
+                                                <a href="elements.html" className="nav-link">Elements</a>
                                             </li>
-                                            <li class="nav-item">
-                                                <a href="typography.html" class="nav-link">Typography</a>
+                                            <li className="nav-item">
+                                                <a href="typography.html" className="nav-link">Typography</a>
                                             </li>
-                                            <li class="nav-item has-child">
-                                                <a href="/" class="nav-link">Nested Navigation</a>
+                                            <li className="nav-item has-child">
+                                                <a href="/" className="nav-link">Nested Navigation</a>
                                                
-                                                <ul class="child">
-                                                    <li class="nav-item">
-                                                        <a href="/" class="nav-link">Level 2</a>
+                                                <ul className="child">
+                                                    <li className="nav-item">
+                                                        <a href="/" className="nav-link">Level 2</a>
                                                     </li>
-                                                    <li class="nav-item">
-                                                        <a href="/" class="nav-link">Level 2</a>
+                                                    <li className="nav-item">
+                                                        <a href="/" className="nav-link">Level 2</a>
                                                     </li>
-                                                    <li class="nav-item has-child">
-                                                        <a href="/" class="nav-link">Level 2</a>
+                                                    <li className="nav-item has-child">
+                                                        <a href="/" className="nav-link">Level 2</a>
                                                         
-                                                        <ul class="child">
-                                                            <li class="nav-item has-child">
-                                                                <a href="/" class="nav-link">Level 3</a>
+                                                        <ul className="child">
+                                                            <li className="nav-item has-child">
+                                                                <a href="/" className="nav-link">Level 3</a>
                                                                
-                                                                <ul class="child">
-                                                                    <li class="nav-item">
-                                                                        <a href="/" class="nav-link">Level 4</a>
+                                                                <ul className="child">
+                                                                    <li className="nav-item">
+                                                                        <a href="/" className="nav-link">Level 4</a>
                                                                     </li>
-                                                                    <li class="nav-item">
-                                                                        <a href="/" class="nav-link">Level 4</a>
+                                                                    <li className="nav-item">
+                                                                        <a href="/" className="nav-link">Level 4</a>
                                                                     </li>
-                                                                    <li class="nav-item">
-                                                                        <a href="/" class="nav-link">Level 4</a>
+                                                                    <li className="nav-item">
+                                                                        <a href="/" className="nav-link">Level 4</a>
                                                                     </li>
                                                                 </ul>
                                                              
                                                             </li>
-                                                            <li class="nav-item">
-                                                                <a href="/" class="nav-link">Level 3</a>
+                                                            <li className="nav-item">
+                                                                <a href="/" className="nav-link">Level 3</a>
                                                             </li>
-                                                            <li class="nav-item">
-                                                                <a href="/" class="nav-link">Level 3</a>
+                                                            <li className="nav-item">
+                                                                <a href="/" className="nav-link">Level 3</a>
                                                             </li>
                                                         </ul>
                                                         
@@ -269,19 +269,19 @@ export default function Navbar() {
                                                 </ul>
                                                 
                                             </li>
-                                            <li class="nav-item">
-                                                <a href="image-header.html" class="nav-link">Image Header</a>
+                                            <li className="nav-item">
+                                                <a href="image-header.html" className="nav-link">Image Header</a>
                                             </li>
-                                            <li class="nav-item">
-                                                <a href="messaging.html" class="nav-link">Messages</a>
+                                            <li className="nav-item">
+                                                <a href="messaging.html" className="nav-link">Messages</a>
                                             </li>
                                         </ul>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="contact.html">Contact</a>
+                                    <li className="nav-item">
+                                        <a className="nav-link" href="contact.html">Contact</a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a href="submit.html" class="btn btn-primary text-caps btn-rounded btn-framed">Submit Ad</a>
+                                    <li className="nav-item">
+                                        <a href="submit.html" className="btn btn-primary text-caps btn-rounded btn-framed">Submit Ad</a>
                                     </li>
                                 </ul>
                                

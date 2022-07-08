@@ -1,22 +1,23 @@
 import React from 'react';
-import Categories from './components/Categories';
-import FeaturesSteps from './components/FeaturesSteps';
-import LatestAds from './components/LatestAds';
-import RecentListing from './components/RecentListing';
-import FooterComp from './layouts/FooterComp';
-import Navbar from './layouts/Navbar';
+import Index1 from './pages/Index1';
+
 
 function App() {
   return (
     <div className="App">
-     <Navbar/>
+
+    {/* <Index1/> */}
+
+
+
+     {/* <Navbar/>
      <Categories/>
      
      <FeaturesSteps/>
-     {/* <LatestAds/> */}
+     <LatestAds/>
      <RecentListing/>
      
-     <FooterComp/>
+     <FooterComp/> */}
     </div>
   );
 }

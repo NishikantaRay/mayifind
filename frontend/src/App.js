@@ -13,7 +13,7 @@ function App() {
      <Categories/>
      
      <FeaturesSteps/>
-     <LatestAds/>
+     {/* <LatestAds/> */}
      <RecentListing/>
      
      <FooterComp/>

@@ -12,10 +12,22 @@ import ListingGridSidebar from './layouts/ListingGridSidebar';
 import ListingListSidebar from './layouts/ListingListSidebar';
 import Sellers from './components/Sellers';
 import Faq from './layouts/Faq';
+import Pricing from './components/Pricing';
+import SubmitAds from './layouts/SubmitAds';
+import BlogPost from './layouts/BlogPost';
+import Blog from './layouts/Blog';
+import SellerDetails1 from './layouts/SellerDetails1';
+import SellerDetails2 from './layouts/SellerDetails2';
 
 function App() {
   return (
     <div className="App">
+      <SellerDetails2/>
+      {/* <SellerDetails1/> */}
+      {/* <Blog/> */}
+      {/* <BlogPost/> */}
+      {/* <SubmitAds/> */}
+      {/* <Pricing/> */}
       {/* <ListingGridSidebar/> */}
     {/* <ListingListSidebar/> */}
     {/* <Sellers/> */}

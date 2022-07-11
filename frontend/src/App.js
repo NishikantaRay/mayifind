@@ -18,11 +18,17 @@ import BlogPost from './layouts/BlogPost';
 import Blog from './layouts/Blog';
 import SellerDetails1 from './layouts/SellerDetails1';
 import SellerDetails2 from './layouts/SellerDetails2';
+import MyProfile from './components/MyProfile';
+import MyAds from './components/MyAds';
+import ChangePassword from './components/ChangePassword';
 
 function App() {
   return (
     <div className="App">
-      <SellerDetails2/>
+      <ChangePassword/>
+      {/* <MyAds/> */}
+      {/* <MyProfile/> */}
+      {/* <SellerDetails2/> */}
       {/* <SellerDetails1/> */}
       {/* <Blog/> */}
       {/* <BlogPost/> */}
